@@ -1,0 +1,16 @@
+What's the relationship between functional style and declarative style? Give some examples where code is is one style and not the other, where possible, and where it may be in both styles (again where possible). Please write the examples and the details in this file. Keep the details short and concise.
+
+Functional style programming is when functions are first class citizens, have higher order, and don't have side effects. Declarative style programming is when the code describes what should be done rather than how to do it. Functional and declarative styles tend to align when it comes to most code. We will argue that purely functional code is automatically declarative because higher order functions will almost never describe the steps on how to do it.
+
+Declarative but not functional in SQL: SELECT name FROM classes WHERE attendance < 0.5;
+In this, it is declarative in how it tells what to retrieve but is not functional because it 
+doesn't have any functions.
+
+Both functional and declarative in Java: array.filter(factor => number % factor == 0);
+This is functional because of its higher order function .filter() that takes a function as an argument and is declarative because it expresses what it wants rather than how to do it manually such as through a for loop.
+
+
+
+
+Total[10]: 10
+

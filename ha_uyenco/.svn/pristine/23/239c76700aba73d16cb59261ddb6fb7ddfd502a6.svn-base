@@ -1,0 +1,36 @@
+package numbergenerator;
+
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+import java.util.concurrent.atomic.AtomicInteger;
+
+
+enum Result{
+  LOW,
+  HIGH,
+  CORRECT
+}
+
+public interface NumberGuesser {
+  static Result evaluateGuess(int guess, int number){
+    return switch (Integer.compare(guess, number)) {
+      case -1 -> Result.LOW;
+      case 1  -> Result.HIGH;
+      default -> Result.CORRECT;
+    };
+  }
+
+  static void play(int target, Supplier<Integer> read_guess, BiConsumer<Integer,Result> display, AtomicInteger guessCount){
+    Result result;
+	
+    do {
+      int guess = read_guess.get();
+      guessCount.incrementAndGet();
+
+      result = evaluateGuess(guess, target);
+
+      display.accept(guessCount.get(), result);
+      
+      } while (result != Result.CORRECT);
+  }
+}

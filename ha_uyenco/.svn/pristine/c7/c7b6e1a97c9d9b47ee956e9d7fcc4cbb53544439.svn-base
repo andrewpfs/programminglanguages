@@ -1,0 +1,203 @@
+[Reviewed 11/12/25 06:09 AM CET]
+synopsis: let's reduce some noise
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/25 04:54 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/25 04:32 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/25 18:16 PM CET]
+synopsis: missing duration
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/25 06:01 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/25 06:52 AM MST]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/25 04:51 AM MST]
+synopsis: let's remove ()
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/25 04:20 AM MST]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/25 20:43 PM MST]
+synopsis: let's make it fluent
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/25 06:04 AM MST]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in file(s).
+
+Let's get started with the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/25 01:55 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/25 12:01 PM CET]
+synopsis: let's make it fluent
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/25 11:46 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/25 06:26 AM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/25 20:56 PM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 11/01/25 12:32 PM CET]
+synopsis: one step at a time
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/01/25 05:07 AM CET]
+synopsis: we build on, one step at a time
+
+details:
+
+First test - one line.
+Second test - two lines.
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/25 21:13 PM CET]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/25 14:27 PM CET]
+synopsis: let's move forward to the next test
+
+details:
+
+Let's move forward to the next test, where we bring in one more line into the DSL.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/25 04:11 AM EET]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/25 17:35 PM EET]
+synopsis: minimum code and expressive code
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/25 04:45 AM EET]
+synopsis: one step at a time
+
+details:
+
+From assign3.txt:
+"The key is to take small steps, get one line of the DSL working at a time."
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/25 06:58 AM EET]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓Groovy
+-Scala
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/25 06:34 AM EET]
+synopsis: team did not get language approval
+
+details:
+
+Team did not get the languages approved yet.
+
+------------------------------------------------------------------------------

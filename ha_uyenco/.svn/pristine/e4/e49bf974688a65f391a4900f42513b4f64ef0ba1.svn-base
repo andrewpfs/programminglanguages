@@ -1,0 +1,219 @@
+[Reviewed 10/13/25 18:11 PM EDT]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/25 12:01 PM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Please see suggestions in file(s).
+
+Let's move forward to the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/25 04:05 AM MDT]
+synopsis: let's not use reverse
+
+details:
+
+Scala: done
+
+Haskell: 
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/12/25 05:27 AM MDT]
+synopsis: a few things to improve
+
+details:
+
+Scala: Please see suggestions in file(s).
+
+Haskell: let's not reverse
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/25 12:26 PM SAST]
+synopsis: error running
+
+details:
+
+> ./run.sh 
+Error: [Cabal-7071]
+'clean' extra arguments should be script files: all
+
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Error: [Cabal-7107]
+Could not resolve dependencies:
+[__0] trying: myfirstapp-0.1.0.0 (user goal)
+[__1] trying: myfirstapp:*test
+[__2] unknown package: hspec (dependency of myfirstapp *test)
+[__2] fail (backjumping, conflict set: hspec, myfirstapp, myfirstapp:test)
+After searching the rest of the dependency tree exhaustively, these were the goals I've had most trouble fulfilling: myfirstapp, myfirstapp:test, hspec
+
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Error: [Cabal-7107]
+Could not resolve dependencies:
+[__0] trying: myfirstapp-0.1.0.0 (user goal)
+[__1] trying: myfirstapp:*test
+[__2] unknown package: hspec (dependency of myfirstapp *test)
+[__2] fail (backjumping, conflict set: hspec, myfirstapp, myfirstapp:test)
+After searching the rest of the dependency tree exhaustively, these were the goals I've had most trouble fulfilling: myfirstapp, myfirstapp:test, hspec
+
+------------------------------------------------------------------------------
+[Reviewed 10/08/25 23:17 PM SAST]
+synopsis: run failed
+
+details:
+
+> ./run.sh 
+Error: [Cabal-7043]
+Cannot test all the packages in the project because none of the components are available to build: the test suite 'myfirstapp-test' is not available because the solver picked a plan that does not include the test suites, perhaps because no such plan exists. To see the error message explaining the problems with such plans, force the solver to include the test suites for all packages, by adding the line 'tests: True' to the 'cabal.project.local' file.
+
+
+------------------------------------------------------------------------------
+[Reviewed 10/08/25 00:22 AM WEST]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/25 18:04 PM CEST]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in file(s).
+
+Let's move forward to the next language
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/25 07:32 AM CEST]
+synopsis: let's clean up
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/25 05:28 AM CEST]
+synopsis: let's reduce code
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/05/25 21:56 PM CEST]
+synopsis: comments found in code
+
+details:
+
+Let's not write comments that tell what the code is doing. Instead we will write expressive code making such comments redundant.
+
+Turn comments into executable code. Feel a need for comment? How can we make that a named variable, a separate function, so the intent is clear in code than via comments?
+
+If you still feel comments are needed ask how we can write code more expressively to make that comments redundant.
+
+
+------------------------------------------------------------------------------
+[Reviewed 10/04/25 05:32 AM MDT]
+synopsis: let's move forward
+
+details:
+
+How's your team doing relative to the rest of the class:
+——.====🥉====.====.====——
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/25 23:59 PM MDT]
+synopsis: let's use proper recursion
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/25 07:22 AM MDT]
+synopsis: good so far
+
+details:
+
+How's your team doing relative to the rest of the class:
+——.====🥉====.====.====——
+
+Please see suggestions in file(s).
+
+Let's move forward to the next function.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/25 07:07 AM MDT]
+synopsis: let's refactor
+
+details:
+
+How's your team doing relative to the rest of the class:
+——.====🥉====.====.====——
+
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/30/25 15:34 PM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/30/25 05:48 AM MDT]
+synopsis: iterative can be functional also
+
+details:
+
+How's your team doing relative to the rest of the class:
+——.====.====.====🥈====——
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/25 07:08 AM MDT]
+synopsis: prefer val over var
+
+details:
+
+How's your team doing relative to the rest of the class:
+——.====.====.====🥈====——
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/25 14:00 PM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+✓Scala
+✓Haskell
+✓Erlang
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

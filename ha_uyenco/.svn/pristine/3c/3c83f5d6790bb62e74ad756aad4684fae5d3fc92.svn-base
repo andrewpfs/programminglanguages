@@ -1,0 +1,27 @@
+package numbergenerator;
+
+enum Result{
+  LOW,
+  HIGH,
+  CORRECT
+}
+
+public class NumberGuesser {
+  static Result evaluateGuess(int guess, int number){
+
+    if(guess < number)
+    {
+      return Result.LOW;
+    }
+    else if(guess > number) //Feedback: no need for else after a return or raise of an exception
+    {
+      return Result.HIGH;
+    }
+    else
+    {
+      return Result.CORRECT;
+    }
+  }
+}
+
+//Feedback: do we need this much code for one test to pass?

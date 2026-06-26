@@ -1,0 +1,10 @@
+package fib_app
+
+object FibonacciAppRecursiveAndIterative {
+  def fibonacciSeriesRecursiveAndIterative(position : Int): List[Int] = position match {
+	case 0 => List(1)
+	case 1 => List(1,1)
+    case _ => val series = fibonacciSeriesRecursiveAndIterative(position - 1)
+    series :+ series.takeRight(2).sum
+  } 
+}

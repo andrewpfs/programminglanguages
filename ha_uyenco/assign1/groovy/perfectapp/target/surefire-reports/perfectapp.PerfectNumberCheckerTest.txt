@@ -1,0 +1,81 @@
+-------------------------------------------------------------------------------
+Test set: perfectapp.PerfectNumberCheckerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.530 s <<< FAILURE! -- in perfectapp.PerfectNumberCheckerTest
+perfectapp.PerfectNumberCheckerTest.perfect number checker -- Time elapsed: 0.339 s <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (9 failures)
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               6
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [6]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               28
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [28]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               496
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [496]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               8128
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [8128]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               1
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [1]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               2
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [2]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               3
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [3]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               12
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [12]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	org.spockframework.runtime.ConditionFailedWithExceptionError: Condition failed with Exception:
+
+isPerfectNumber(number) == result
+|               |
+|               -1
+groovy.lang.MissingMethodException: No signature of method: perfectapp.PerfectNumberCheckerTest.isPerfectNumber() is applicable for argument types: (Integer) values: [-1]
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+
+	at perfectapp.PerfectNumberCheckerTest.perfect number checker(PerfectNumberCheckerTest.groovy:10)
+

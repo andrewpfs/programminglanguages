@@ -1,0 +1,21 @@
+package meetingapp
+
+import org.junit.Test
+import static org.junit.Assert.*
+import static MeetingScheduler.*
+
+public class MeetingMakerMakerTest {
+  @Test
+  void firstLineOfDSLSchedule() { 
+    def result = schedule meeting 
+
+    assert result == "scheduled meeting"
+  }
+  
+  @Test
+  void secondLineofDSLSchedule(){ //Feedback: void twoLinesOfDSL
+    def result = name 'early admissions' //Feedback: missing the first line here.
+
+    assert result == "name is early admissions"
+  }
+}

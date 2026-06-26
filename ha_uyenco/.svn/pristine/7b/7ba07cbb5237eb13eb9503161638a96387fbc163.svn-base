@@ -1,0 +1,2 @@
+cd perfectapp
+mvn test

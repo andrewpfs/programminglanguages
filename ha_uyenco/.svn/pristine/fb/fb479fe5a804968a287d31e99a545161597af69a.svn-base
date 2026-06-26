@@ -1,0 +1,18 @@
+All dynamically typed languages are not weakly typed but all weakly typed languages are dynamically typed.
+
+Discuss in favor or against the above statement. Provide enough details and multiple examples to support your arguments.
+
+We disagree with the statement that all weakly typed languages are dynamically typed because while weakly typed languages do not verify if the object is the type it is supposed to be at runtime allowing type conversion, it can still be statically typed and verify the type at compile time. Languages like C, C++ are examples of weakly typed static languages. 
+
+In C, types are checked at compile time making it static however it allows type conversion which would not be checked at run time because it is weakly typed.
+
+int main() {
+  int a = 1;
+  char b = '2';
+  
+  printf("The result of a + b is: %d\n", a + b);
+
+  return 0; 
+}
+This example shows that c is a statically and weakly typed language. A is an int while b is a char. When we add a and b it automatically converts b which is '2' into its ascii int value which is 50.
+It compiles and runs without an error. This shows the type conversion without casting 

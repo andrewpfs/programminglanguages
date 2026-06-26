@@ -1,0 +1,21 @@
+playersAndScores = [:]
+
+def methodMissing(String name, args) {
+	if (args.size() == 1) {
+		playersAndScores[name] = args[0]
+	}
+}
+
+def getWinner() {
+	def theWinner = ""
+	def maxScore = 0
+	playersAndScores.each { name, score ->
+		if (maxScore < score) {
+			maxScore = score
+			theWinner = name
+		}
+	}
+	println "Winner is $theWinner with score $maxScore"
+}
+
+//Feedback: please remove this file

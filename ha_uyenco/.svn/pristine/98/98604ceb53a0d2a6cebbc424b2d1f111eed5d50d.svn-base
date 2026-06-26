@@ -1,0 +1,12 @@
+module Main (main) where
+
+import Test.Hspec
+import Hello (hello)
+
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = describe "Hello.hello" $
+  it "returns the expected greeting" $
+    hello `shouldBe` "Hello, World!"

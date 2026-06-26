@@ -1,0 +1,3 @@
+Encapsulation in a OO language means that fields declared private in one class may not be access from an instance method of another class, but can be accessed from within the instance methods of the defining class.
+
+Discuss, what do you think?

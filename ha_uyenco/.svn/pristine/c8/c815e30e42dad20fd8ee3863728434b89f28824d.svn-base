@@ -1,0 +1,10 @@
+defmodule NumberGameTest do
+  use ExUnit.Case
+  doctest NumberGame
+
+  test "testing evaluate_guess" do
+    assert NumberGame.evaluate_guess(20, 20) == :correct
+    assert NumberGame.evaluate_guess(10, 20) == :low
+    assert NumberGame.evaluate_guess(30, 20) == :high
+  end
+end

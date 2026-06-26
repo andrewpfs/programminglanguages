@@ -1,0 +1,8 @@
+module FibonacciAppRecursive (fiboAppRecursive) where
+
+fiboAppRecursive 0 = [1]
+fiboAppRecursive 1 = [1, 1]
+fiboAppRecursive position =
+  let prevSeries = fiboAppRecursive(position - 1)
+      nextValue = sum (drop (length prevSeries - 2) prevSeries)
+  in prevSeries ++ [nextValue]

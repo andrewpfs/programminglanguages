@@ -1,0 +1,7 @@
+package meetingapp
+
+def dsl = new File('meeting.txt').text
+def code = new File('meetingDSL.groovy').text
+evaluate(code + "\n" + dsl)
+
+//Feedback: please remove this file

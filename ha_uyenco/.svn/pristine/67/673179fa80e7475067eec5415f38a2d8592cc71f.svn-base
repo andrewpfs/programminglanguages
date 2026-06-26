@@ -1,0 +1,12 @@
+def factor_list(arr)
+  arr.flat_map {|number| (1..number).select {|factor| number % factor == 0} }
+  .uniq
+  .sort
+end
+
+def main
+  array = [2, 5, 7, 8, 12, 18, 15]
+  puts factor_list(array).join(" ")
+end
+
+main

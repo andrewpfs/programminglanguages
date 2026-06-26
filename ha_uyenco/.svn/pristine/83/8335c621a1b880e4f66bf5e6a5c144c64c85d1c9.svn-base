@@ -1,0 +1,5 @@
+package fib-app
+
+def fibonacciSeries(number : int) = {
+	1
+}

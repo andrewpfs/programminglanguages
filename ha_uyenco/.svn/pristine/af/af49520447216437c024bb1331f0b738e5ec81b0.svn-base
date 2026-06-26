@@ -1,0 +1,19 @@
+package repeat;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class PerfectNumberCheckerFunctionalTest {
+  @Test
+  void repeatLetters() {
+    assertAll(
+      () -> assertEquals("h", repeatedLetter.firstRepeated("hello there")),
+      () -> assertEquals("l", repeatedLetter.firstRepeated("hello okay")),
+      () -> assertEquals("e", repeatedLetter.firstRepeated("hello elmo")),
+      () -> assertEquals("l", repeatedLetter.firstRepeated("hello")),
+      () -> assertEquals("l", repeatedLetter.firstRepeated("hello sam")),
+      () -> assertEquals("",  repeatedLetter.firstRepeated("gopher")),
+      () -> assertEquals(" ",  repeatedLetter.firstRepeated("and this oy"))
+    );
+  }
+}

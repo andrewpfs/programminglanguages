@@ -1,0 +1,13 @@
+package perfectapp;
+
+import module java.base;
+
+public class PerfectNumberCheckerFunctional {
+  public static boolean isPerfectNumber (int number) {
+  
+    var sum = IntStream.rangeClosed(1, number) 
+      .filter(factor -> number % factor == 0)
+      .sum();
+    return sum == number * 2;
+  }  
+}

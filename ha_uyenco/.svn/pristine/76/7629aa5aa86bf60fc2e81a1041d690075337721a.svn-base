@@ -1,0 +1,30 @@
+[Reviewed 10/30/25 04:45 AM EET]
+synopsis: one step at a time
+
+details:
+
+From assign3.txt:
+"The key is to take small steps, get one line of the DSL working at a time."
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/25 06:58 AM EET]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Groovy
+-Scala
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/25 06:34 AM EET]
+synopsis: team did not get language approval
+
+details:
+
+Team did not get the languages approved yet.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+module Main (main) where
+
+import Test.Hspec
+import FibonacciAppIterative (fiboAppIterative)
+
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = describe "FibonacciAppIterative." $ do
+    it "returns [1] when input is 0" $
+      fiboAppIterative 0 `shouldBe` [1]
+
+    it "returns [1,1] when input is 1" $
+      fiboAppIterative 1 `shouldBe` [1,1] --Feedback: space after comma, please
+
+    it "returns [1,1,2] when input is 2" $
+      fiboAppIterative 2 `shouldBe` [1,1,2]
+
+    it "returns [1,1,2,3] when input is 3" $
+      fiboAppIterative 3 `shouldBe` [1,1,2,3]
+
+    it "returns [1,1,2,3,5,8] when input is 5" $
+      fiboAppIterative 5 `shouldBe` [1,1,2,3,5,8]
+
+    it "returns [1,1,2,3,5,8,13,21,34,55,89] when input is 10" $
+      fiboAppIterative 10 `shouldBe` [1,1,2,3,5,8,13,21,34,55,89]

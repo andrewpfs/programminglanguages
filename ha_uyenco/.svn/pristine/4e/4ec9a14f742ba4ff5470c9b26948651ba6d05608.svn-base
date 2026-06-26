@@ -1,0 +1,15 @@
+package meetingapp
+
+import org.junit.Test
+import static org.junit.Assert.*
+import static meetingapp.MeetingScheduler.schedule
+
+
+public class MeetingMakerMakerTest {
+  @Test
+  void firstLineOfDSLSchedule() { 
+    def result = schedule 'meeting'
+
+    assertEquals("meeting", result)
+  }
+}

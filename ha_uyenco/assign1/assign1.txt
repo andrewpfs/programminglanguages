@@ -1,0 +1,73 @@
+Assign1: Due 11:59PM CT September 26
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+A lot of help will be provided for those who ask. Do not get stuck on a problem for too long. Please time box. Allow yourself, for example, one hour. If you can't find a solution in that time, ask Venkat for help.
+
+For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other. Please drop an email to Venkat to check if your language choices are OK before you invest too much time into any of them.
+
+Start with one language. Write the code in that language, evolve it using reviews. Once you've completed code in one language and gotten a satisfactory review, then create in second language. Once that's completed, proceed to the third language. Venkat will let you know, during reviews, when it is time to move forward with the second or the third language.
+
+Create files using proper extensions. Also create either a build file or a sh file that will compile (if necessary) and run your code to display the output or show test results automatically. Venkat and your partner should be able to easily run your code with run of one build or sh file. Again, please do not hesitate to ask for help after the time boxed effort.
+
+If you need help with any of the steps, please ask. You do not have to fight with tools or code for a long time. The purpose of this course is to learn. If you're stuck, then ask for help and it will be given. If you start early, you will be able to make much better progress than if you start late.
+
+In each of the languages, create two implementations for a function that will tell whether a number, given as argument, is a perfect number or not.
+
+A perfect number is a number greater than 1 whose factors total to twice the number. For example, the factors of 6 are 1, 2, 3, and 6. The total of these values is 12 which is twice the given number 6.
+
+The first implementation, in each language, should be in imperative style. The second implementation, in each language, should be in functional style with no explicit mutation of variables. Start with a test first and write minimum code to pass the tests after, each step of the way.
+
+After completing the coding (and only after that), answer the following questions:
+
+1. Discuss some of the things you have learned from working on this assignment.
+
+Along with learning two new languages (ruby and groovy), we learned more about how to code functionally and how to make our code more readable for the user. We also learned how to utilize and create build tools to our advantage.
+
+2. Were there any thing that surprised you or things that you did not expect.
+
+Something that surprised us was the conciseness of coding functionally compared to imperatively. It was also surprising to learn about the different built-in methods and interfaces in Java and Groovy that made it easy and fast to code functionally. 
+I did not expect groovy to use the java virtual machine to compile so it required a java version to be installed. 
+ 
+3. Given this experience, draw a comparison between the imperative style and the functional style.
+
+As mentioned before, there was a clear difference in conciseness between the two styles. 2 out of 3 of the functionally typed implementations were condensed into one line and the other could've been made into one line too. 
+I think imperative is a lot easier to read if you don't have a good understanding of the language as functional often used functions that were specific for that language so there was no mutation.
+
+4. Given this experience, draw a comparison between static typing and dynamic typing.
+
+The dynamic typing was nice as were often did not have to declare types, but it did cause some errors at compile time such as in 1..-n it would break when you ran it. 
+For java if we called a function it would be public static boolean isPerfectNumber(int number) while for ruby it could just be def perfect_number?(number) which is a lot less typing.
+
+5. Of the three languages that you used, what are your impressions about each, their strengths, weaknesses, your likes/dislikes.
+
+With Java, the build tool that was used was easy to setup. It was a little tricky when adhering to different Java versions as it would lead to errors when the Java version on that computer did not support the Java version in our code.
+
+Coding with Ruby, I really liked how you could put if statements in the same line. I also thought how they decide how a function gets finished through the end keyword. I think the language itself is pretty easy to read 
+
+Lastly, for Groovy, something that was a little annoying was the iteration using (1..n), unlike the for loop in Java or C++, it would fail with numbers not in the range.
+
+Total[100]: 93
+
+Language 1 [30]: Ruby
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 2 [30]: Java 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 3 [30]: Groovy
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Response to questions [10]: -7
+
+Please see https://groups.google.com/g/uhcsf25pl/c/gRBd4gvM0Qc/m/TC9VxsBEAAAJ

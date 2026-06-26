@@ -1,0 +1,19 @@
+Consider the following pseudo code.
+
+compute(n) = n
+respond(n) = 0
+
+main = print(respond(compute(7)))
+
+1. If this pseudocode were implemented in Java, C#, Python, C++, etc., discuss 
+what will happen when main is executed (not just the output, but the behavior 
+of code) and provide reasons for that behavior.
+
+REPLACE THIS WITH YOUR RESPONSE
+
+2. If this pseudocode were implemented in a language like Haskell, discuss 
+what will happen when main is executed (not just the output, but the behavior 
+of code) and provide reasons for that behavior.
+
+REPLACE THIS WITH YOUR RESPONSE
+

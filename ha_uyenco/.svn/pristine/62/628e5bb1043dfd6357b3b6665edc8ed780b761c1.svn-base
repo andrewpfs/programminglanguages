@@ -1,0 +1,9 @@
+Observe the following Haskell REPL session:
+
+Prelude> let multiply op1 op2 = op1 * op2
+multiply :: Num a => a -> a -> a
+Prelude>
+
+In essence, what does the details provided between the two Prelude lines mean?
+
+Between the Prelude lines, the line is inferring the type of the function multiply. multiply is a curried function so calling multiply op1 op2 will first partially apply multiply op1 which will return a -> a. multiply op1 op2 and produce the numeric result as it has both arguments supplied. a -> a -> a represents the type of the entire curried function.

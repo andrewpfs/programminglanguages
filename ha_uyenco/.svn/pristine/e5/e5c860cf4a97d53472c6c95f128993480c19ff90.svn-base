@@ -1,0 +1,19 @@
+package numbergenerator;
+
+import java.lang.Math;
+import java.util.Scanner;
+import java.util.*;
+
+public class numberGuesser {
+    public static String numberGuessing(int guess){
+      Random random = new Random(42);
+      int number = random.nextInt(100)+1;
+      System.out.println(number);
+      String result = new String();
+
+      if(guess < number){
+        result = "Guess is too low";
+      }
+      return result;
+    }
+}

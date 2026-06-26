@@ -1,0 +1,18 @@
+All dynamically typed languages are not weakly typed but all weakly typed languages are dynamically typed.
+
+Discuss in favor or against the above statement. Provide enough details and multiple examples to support your arguments.
+
+I disagree with the statement that all weakly typed languages are dyanmically typed because langauges like  C,C++ are weakly typed static languages. 
+In C++, types are checked at compile time making it static however it allows type conversion which shows that it is a weak language.
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+  float x = 5/2;
+  cout << x << endl;
+  return 0;
+}
+This shows how C++ is weakly typed as the float x actually outputs 2. C++ does integer division and then converts the divisor into a float. 
+The change from an integer into a float is an example of type conversion as if it were doing float division it would be 2.5.

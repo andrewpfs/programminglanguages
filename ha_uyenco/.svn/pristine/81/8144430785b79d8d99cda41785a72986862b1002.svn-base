@@ -1,0 +1,12 @@
+module FibonacciAppRecursive (fiboAppRecursive) where
+
+
+fiboAppRecursive :: Int -> [Int]
+fiboAppRecursive 0 = [1]
+fiboAppRecursive 1 = [1, 1]
+fiboAppRecursive position =
+  let prevSeries = fiboAppRecursive(position - 1)
+      nextValue = sum (take 2(reverse prevSeries))
+  in prevSeries ++ [nextValue]
+
+--Feedback: let's avoid using reverse

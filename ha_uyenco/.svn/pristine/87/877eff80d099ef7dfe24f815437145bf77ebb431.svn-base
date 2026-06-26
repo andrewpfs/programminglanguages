@@ -1,0 +1,21 @@
+[Reviewed 11/19/25 00:36 AM CET]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/15/25 06:34 AM MST]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Elixer
+-Java
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

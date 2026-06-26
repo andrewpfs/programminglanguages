@@ -1,0 +1,6 @@
+A purely functional language can't have side-effects. However, a realistic program can't survive without side-effects. What do pure-functional languages do to get around these concerns? Explain.
+
+
+Things such as monads and IO actions basically offsetting it until the very end so that the majority of the program is pure
+
+Basically you don't change states. You replace the old state with an updated version. And you use Monads for side effects.

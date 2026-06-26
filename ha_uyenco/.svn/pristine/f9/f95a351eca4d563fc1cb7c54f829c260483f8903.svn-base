@@ -1,0 +1,14 @@
+[Reviewed 09/26/25 14:00 PM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Scala
+-Haskell
+-Erlang
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

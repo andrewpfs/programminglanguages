@@ -1,0 +1,14 @@
+Suppose a compiler sees the following code
+
+const sum = 4 + 7
+
+and replaces it with
+
+const sum = 11
+
+What's that feature called and what are the benefits of that feature? [And I am not looking for Constant Folding as the answer]
+
+This feature can be referred to as compile-time evaluation. This means that when an expression has known values at compile time, it will substitute the result in the code. The benefits of this feature include faster execution as it computes the value before runtime, saving that time that it would've taken to calculate it while running. It can also lead to better optimization as it removes unnecessary calculations, make the code more efficient as well. 
+
+Total[10]: 5
+Referential transparency

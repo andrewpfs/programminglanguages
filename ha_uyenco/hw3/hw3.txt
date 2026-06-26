@@ -1,0 +1,89 @@
+HW3: Due 11:59PM CT December 5
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What's the difference between inheritance and prototypal inheritance?
+
+Inheritance is when methods and properties can be reused from other classes while prototypal inheritance is when an object can share methods and properties directly with other objects. The inheritance model therefore is different, inheritance uses a class hierarchy while prototypal inheritance uses a prototype chain utilizing the prototype feature of objects. Rather than classification, it's more of a delegation. If the object doesn't have a property, it delegates the request to the prototype.
+
+An advantage of prototypal inheritance over classical inheritance is greater flexibility. In class based inheritance, the subclass is tightly coupled to the superclass and is highly dependent on it. This makes it more complex and harder to maintain as the class hierarchies grow deeper. In prototypal inheritance, objects are loosely coupled and the inheritance hierarchies can be modified at runtime more easily.
+
+2. Give examples of prototypal inheritance.
+
+This example shows the how animal can be set the prototype object for dog and inherits its properties. It also showcases how methods can be added at runtime with dog.bark().
+
+const animal = {
+  eat() {
+    console.log('This animal eats food.');
+  },
+};
+
+const dog = Object.create(animal);
+dog.bark = function () {
+  console.log('The dog barks.');
+};
+
+dog.eat(); //This animal eats food
+dog.bark(); //The dog barks
+
+=====
+
+This example shows how a prototype chain works. To resolve methods and properties, it will first searches the object itself then move up the prototype chain until it finds it or reaches the end. The prototype object is set through using __proto__.
+
+let user = { 
+  email: "default@gmail.com",
+  ID: 9999,
+
+  set accountInfo(value){
+    [this.email, this.ID] = value.split(" " );
+  },
+
+  get accountInfo(){
+    return `${this.email} ${this.ID}`;
+  }
+
+}
+
+let premiumUser = {
+  __proto__: user,
+  Ads: false
+};
+
+let familyPremium = {
+  __proto__: premiumUser,
+  multipleDevices: true
+}
+
+let me = {
+  __proto__: familyPremium,
+  email: "andrew@gmail.com",
+  ID: 12
+}
+
+console.log(me.multipleDevices) //true
+console.log(me.Ads) //false
+
+=====
+
+You can also use Object.setPrototypeOf() to mutate an object after you create it.
+
+const Person = {
+  talk() {
+    console.log('Talking')
+}
+
+const me = {
+  walk() {
+    console.log('Walking')
+}
+
+Object.setPrototypeOf(me, Person);
+me.walk(); //Walking
+me.talk(); //Talking
+
+3. Mention a few languages that support prototypal inheritance.
+
+Javascript, Lua, Self
+
+Total[10]: 10

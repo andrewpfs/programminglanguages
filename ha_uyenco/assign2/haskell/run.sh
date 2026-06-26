@@ -1,0 +1,2 @@
+cabal build
+cabal test

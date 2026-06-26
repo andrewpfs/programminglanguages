@@ -1,0 +1,12 @@
+package perfectapp
+
+class PerfectNumberChecker {
+    static isPerfectNumber(def number){
+        if (number <= 1) return false  
+        def result = 1
+        2.upto(number){ factor->
+            if(number % factor == 0) result += factor
+        }
+        result == number * 2
+    }
+}

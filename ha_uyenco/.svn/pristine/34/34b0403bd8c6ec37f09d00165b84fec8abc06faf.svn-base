@@ -1,0 +1,7 @@
+A purely functional language can't have side-effects. However, a realistic program can't survive without side-effects. What do pure-functional languages do to get around these concerns? Explain.
+
+Functional languages use stuff like monad and IO types to allow the program to describe the actions instead of executing them immediately. 
+The runtime executes it later.
+It also replaces the old states with new updated states, and those are sent to other parts of the program. 
+This keeps the program pure and predictable while enabling side effects.
+ 

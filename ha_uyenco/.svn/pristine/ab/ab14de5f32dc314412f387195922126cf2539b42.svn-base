@@ -1,0 +1,123 @@
+package numbergenerator;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.jupiter.api.Test;
+
+import static numbergenerator.NumberGuesser.evaluateGuess;
+import static numbergenerator.NumberGuesser.play;
+import static numbergenerator.NumberGuesser.generateTarget;
+
+public class NumberGuesserTest{
+@Test
+  void guessingNumber20(){
+    assertAll( 
+      () -> assertEquals(evaluateGuess(10, 20), Result.LOW),
+      () -> assertEquals(evaluateGuess(30, 20), Result.HIGH),
+      () -> assertEquals(evaluateGuess(20, 20), Result.CORRECT)
+    );
+  }
+  
+@Test
+  void playFunctionGuess20(){ 
+	AtomicBoolean displayCalled = new AtomicBoolean(false);
+
+    Supplier<Integer> read_guess = () -> 20;
+
+    BiConsumer<Integer,Result> display = (attempts, result) ->
+    {
+      assertEquals(1, attempts);
+      assertEquals(Result.CORRECT, result);
+      displayCalled.set(true);
+    }; 
+
+    play(20, read_guess, display); 
+	
+    assertEquals(true, displayCalled.get());
+  }
+  
+@Test
+  void playFirstGuessLowSecondGuessEqual(){ 
+    AtomicBoolean displayCalled = new AtomicBoolean(false);
+	
+    Deque<Integer> guessQueue = new ArrayDeque<>();
+    guessQueue.add(10);
+    guessQueue.add(20);
+	
+	Supplier<Integer> read_guess = () -> guessQueue.pop(); 
+	
+    BiConsumer<Integer,Result> display = (attempts, result) ->
+    {
+      switch(attempts){
+        case 1:
+          assertEquals(Result.LOW, result);
+          break;
+        case 2:
+          assertEquals(Result.CORRECT, result); 
+          break;
+      }
+	  
+      displayCalled.set(true);
+    }; 
+
+    play(20, read_guess, display);
+	
+    assertEquals(true, displayCalled.get());
+  }
+  
+@Test
+  void playLowHighEqual(){ 
+    AtomicBoolean displayCalled = new AtomicBoolean(false);
+	
+    Deque<Integer> guessQueue = new ArrayDeque<>();
+    guessQueue.add(10);
+    guessQueue.add(30);
+    guessQueue.add(20);
+	
+  	Supplier<Integer> read_guess = () -> guessQueue.pop(); 
+	
+    BiConsumer<Integer,Result> display = (attempts, result) ->
+    {
+      switch(attempts){
+        case 1:
+          assertEquals(Result.LOW, result);
+          break;
+        case 2:
+          assertEquals(Result.HIGH, result); 
+          break;
+        case 3:
+          assertEquals(Result.CORRECT, result); 
+          break;
+      }
+	  
+      displayCalled.set(true);
+    }; 
+
+    play(20, read_guess, display);
+	
+    assertEquals(true, displayCalled.get());
+  }
+
+@Test
+  void testGenerateTarget(){ 
+    int target = generateTarget();
+	
+    assertEquals(true, target > 0 && target < 100);
+  }
+
+@Test
+  void testGenerateTargetTwoCalls(){ 
+    int firstTarget = generateTarget();
+    int secondTarget = generateTarget();
+		
+    assertNotEquals(firstTarget, secondTarget); 
+  }
+}

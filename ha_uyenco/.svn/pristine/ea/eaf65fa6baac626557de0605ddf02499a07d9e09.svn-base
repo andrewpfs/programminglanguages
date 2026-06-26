@@ -1,0 +1,9 @@
+#scalac factorial.scala
+
+#for n in 1 4 7 10; do
+  #scala -cp . -e "import factorialApp._; println(factorial($n).mkString(\", \"))"
+#done
+
+for n in 1 4 7 10; do
+ ruby -r './factorial' -e "puts factorial($n).join(', ')"
+done

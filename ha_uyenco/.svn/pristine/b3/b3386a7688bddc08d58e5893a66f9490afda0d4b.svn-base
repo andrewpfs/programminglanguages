@@ -1,0 +1,9 @@
+module FibonacciAppRecursiveIterative (fiboAppRecursiveIterative) where
+
+fiboAppRecursiveIterative position = loop position [1, 1]
+  where
+    loop 0 _ = [1]
+    loop 1 list = list
+    loop n list =
+      let currentList = list ++ [sum (drop (length list - 2) list)]
+      in loop (n - 1) currentList

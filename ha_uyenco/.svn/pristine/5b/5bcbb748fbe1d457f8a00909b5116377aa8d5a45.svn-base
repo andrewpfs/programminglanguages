@@ -1,0 +1,64 @@
+HW3: Due 11:59PM CT December 5
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What's the difference between inheritance and prototypal inheritance?
+
+inheritance is inheriting methods and traits from other classes. While prototypal inheritance is an object inheriting directly from other objects.
+
+2. Give examples of prototypal inheritance.
+
+const animal = {
+  eat() {
+    console.log('This animal eats food.');
+  },
+};
+
+const dog = Object.create(animal);
+dog.bark = function () {
+  console.log('The dog barks.');
+};
+
+dog.eat();
+dog.bark();
+
+
+
+let user = { 
+  email: "default@gmail.com",
+  ID: 9999,
+
+  set accountInfo(value){
+    [this.email, this.ID] = value.split(" " );
+  },
+
+  get accountInfo(){
+    return `${this.email} ${this.ID}`;
+  }
+
+}
+
+let premiumUser = {
+  __proto__: user,
+  Ads: false
+};
+
+let familyPremium = {
+  __proto__: premiumUser,
+  multipleDevices: true
+}
+
+let me = {
+  __proto__: familyPremium,
+  email: "andrew@gmail.com",
+  ID: 12
+}
+
+console.log(me.multipleDevices) //true
+console.log(me.Ads) //false
+
+
+3. Mention a few languages that support prototypal inheritance.
+
+Javascript, Lua

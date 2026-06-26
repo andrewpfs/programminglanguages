@@ -1,0 +1,102 @@
+HW2: Due 11:59PM CT October 24
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What's destrucuting in JavaScript?
+                                 
+Destructuring in JavaScript allows you take values from arrays or properties from objects and assign them to variables in an easy way. With destructuring, it makes it easier to add more variables to objects as your code grows, saving time and making your code more readable. This also means that your code becomes more declarative as the code says what you want rather than how to get it.
+
+2. Show an example of destructuring to swap values in two variables.
+
+let a = 5
+let b = 10
+[a, b] = [b, a]
+
+This swaps the values and now b = 5 and a = 10
+
+3. Show more examples of destructuring.
+
+Spread/Rest:  
+const colors = ["red", "green", "blue", "yellow"]
+const [firstColor, ...extraColors] = colors
+
+extraColors is ["green", "blue", "yellow"] now.
+
+Objects and default values:
+const person1 = {
+    firstName:  "Andrew",
+    gender: "Male",
+}
+
+const person2 = {
+    firstName: "Daniel",
+}
+
+function showPerson({firstName, gender = "Male"}){
+   console.log(`name: ${firstName}`)
+   console.log(`gender: ${gender}`)
+}
+showPerson(person1)
+showPerson(person2)
+
+Here you take the objects properties and its values and you can even set default values
+
+Nested Destructuring:
+
+const user = {
+  name: "Andrew",
+  location: {
+    city: "Houston",
+    state: "Texas"
+  }
+}
+
+const {location: {state, city}} = user
+console.log(state + " " + city)
+
+This uses destructuring to get an object from an object inside another object. This makes it easier to access the property as you don't have to use user.location.city and you can just access the property with city.
+
+Destructuring to skip values in array:
+
+const rgb = ["red", "green", "blue"]
+const [ , secondColor, thirdColor ] = rgb
+console.log(secondColor + "" + thirdColor) 
+
+This uses destructuring to skip the first object in an array by leaving a blank elements
+
+Nested Array destructuring and object renaming:
+
+const list = {
+  users: [
+    { name: "Rob", scores: [50, 60, 90] },
+    { name: "Bob", scores: [90, 95, 60] }
+  ]
+}
+
+const { users: [{ name: firstUser, scores: [firstScore] }] } = list
+console.log(firstUser, firstScore)
+
+This uses destructuring to get the nested user rob and its first score in the array and allows it to rename variables
+
+4. What are some of the restrictions to using destructuring.
+
+Spread/Rest restrictions: 
+When using the rest, there are a couple restrictions. It can only be used at the end of the array and only once. This means that you aren't able to split arrays in places other than the last elements and would have to use a longer, more tedious route if you are trying to split in the middle or front. 
+
+Only works for objects and iterables:
+Another restriction would be that you can only destructure objects or iterables. This means that you can't use this method with numbers, booleans, null, etc. This can lead to crashes when destructuring null or undefined or if it's the wrong type.
+
+Defaults dont work for null or for nested properties that are missing a property:
+A restriction is that you can not set default values if the property of the object is null. If const {gender = "None"} = {gender: null} the default value would not apply and gender would be null. 
+
+Defaulting for child property doesnt work if its parent object isn't defined
+
+const user = {
+  age: 19
+};
+const { profile: { name = "Andrew" } } = user;
+console.log(name)
+
+This leads to an error as the parent object profile isn't there, so you can not set a default value for an object that doesnt exist as it would go user.profile and then break.
+//Feedback: more restrictions...

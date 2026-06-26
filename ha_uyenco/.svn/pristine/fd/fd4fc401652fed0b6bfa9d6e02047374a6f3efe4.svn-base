@@ -1,0 +1,12 @@
+package numbergenerator;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class numberGuesserTest { //Feedback: class names start with uppercase in Java
+    @Test
+    void guessIsLowerThanNumber31() {
+        assertEquals(numberGuesser.numberGuessing(10), "Guess is too low");
+        //Feedback: let's design a function evaluateGuess that takes a target number and a guess. Returning String is not a good idea: error prone, typos, case differences, hard to maintain
+    }
+}

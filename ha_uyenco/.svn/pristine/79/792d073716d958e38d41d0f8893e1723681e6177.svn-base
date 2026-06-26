@@ -1,0 +1,13 @@
+package fib_app
+
+object FibonacciAppRecursive {
+  //Feedback: let's take only one parameter
+  def fibonacciSeriesRecursive(positionsLeft : Int, series : List[Int] = List(1,1)): List[Int] = positionsLeft match {
+	case 0 => List(1)
+	case 1 => series
+    case _ =>
+	  fibonacciSeriesRecursive(positionsLeft - 1, series :+ (series.takeRight(2).sum))
+  } 
+}
+
+//Feedback: let's implement a proper recursion here

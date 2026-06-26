@@ -1,0 +1,58 @@
+HW4: Due 11:59PM CT December 12
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call 
+out something specific to yourself different from your pair.
+
+(a) What languages did you use in this course? 
+
+We used Ruby, Haskell, Groovy, Java, Erlang, Elixir, and Scala.
+
+(b) Which one of those you used for the first time?
+
+The languages we used for the first times are Ruby, Haskell, Groovy, Erlang, Elixir and Scala.
+
+(c) What are your impressions about all the languages that you used (compare
+and contrast in your view)?
+
+Ruby: 
+I really liked the syntax of Ruby. It was a very simple and consistent language that had very low ceremony. It types almost like natural language so it makes it very easy to code and understand. It was very expressive.
+
+Groovy:
+It was a very similar to Java. It had good expressiveness. I am glad we used it for our DSL as it was a pretty good language for starting off the assignment. 
+
+Java:
+It is the most basic out of all the languages. Very safe OO language. It was cool to see other ways to write Java such as writing it functionally using streams and maps. 
+
+Scala:
+It was the first language that was very weird. After the first assignment though, I really started to like it. I liked the type checking and the pattern matching involved with the language.
+
+Haskell:
+It was cool to see how this pure functional language works. The lazy evaluation was very cool to implement into our program. 
+
+Erlang:
+It was a very strange language. The syntax was not fun to learn. It was a very cool language though that does not use any loops just folds and stuff. 
+
+Elixir: 
+It was a very basic language that used macros. I liked that it was very low ceremony and didn't need brackets or semicolons. And so, It felt very similar to Ruby and Python. It was a very expressive language. 
+
+(d) What did you learn mostly in this course (I'm interested in hearing
+your views, things you realized, things you found interesting, things
+you did not like so much about any particular language, etc.)?
+
+Andrew - I think it was a very interesting and fun class. I really liked the pair programming and the constant code reviews. I heard this is very similar to how the industry is, and I think it's cool how this class is setup as it gets us ready for the real world. 
+This class made me realize how there are different ways of going about a problem and how there are pros and cons about going through an approach. It also made me think about how a language really works on the low and how each language has a different apporach about executing code.
+I think all the languages were pretty cool in their own sense. Each language had their own quirks and advantages and disadvantages. I really liked the concept of functional programming though. It is a really cool concept, but it seems so hard to like apply it to like web-dev/ real world. 
+There is also the disadvantage of other people not knowing about it and thinking its useless.
+
+Mary - I really enjoyed this class and working on the assignments. In my prior cases, we never delved into DSLs and never tried coding immutably or in ways that were easy to read. I didn't realize that there are a range of languages that are almost like natural language with low ceremony like Ruby and Scala and I loved learning how to code in them. 
+
+Overall, I learned that my favorite languages to type in are Ruby and Java. Ruby because of the natural flow of it and Java because of its large library of built-in functions. 
+
+It was sometimes frustrating to code with immutability when we tried various methods but I think as we got used to it, we found out the best ways to do so. Java made it really easy to do that because of Int Streams so that made me like Java a little more. 
+
+Overall, I liked the structure of the class as well; getting constant feedback from the professor is something you can't find in any other class at UH.

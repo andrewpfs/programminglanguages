@@ -1,0 +1,28 @@
+package meetingapp
+
+class MeetingScheduler{
+    def meetingInfo = [:]
+    
+    def meeting = 'meeting'
+
+    def methodMissing(String name, args)
+    {
+        meetingInfo[name] = args
+    }
+
+    def schedule (event, closure){
+        closure.delegate = this
+        closure()
+        return meetingInfo
+    }
+
+    def start(Map time){
+        def hour = 0
+        def minute = 0
+        time.each{key, value -> 
+            hour = key.toInteger()
+            minute = value.toInteger()
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+[Reviewed 09/16/25 06:23 AM EDT]
+synopsis: let's get code in the right place
+
+details:
+
+Let's start with the imperative solution, please do not include the functional style just yet.
+
+Let's use a build tool for Java to compile and run the tests.
+
+Let a run.sh invoke the build tool. This file should be under the assign1/java directory.
+
+Tests should be in a proper directory and source code should be in an appropriate directory.
+
+No need for main method.
+
+Let's not write comments that tell what the code is doing. Instead we will write expressive code making such comments redundant.
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/25 07:37 AM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Java
+-Ruby
+-Groovy
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

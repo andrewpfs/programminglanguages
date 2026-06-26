@@ -1,0 +1,11 @@
+package numbergenerator;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class numberGuesserTest {
+    @Test
+    void guessIsLowerThanNumber31() {
+        assertEquals(numberGuesser.numberGuessing(10), "Guess is too low");
+    }
+}

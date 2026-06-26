@@ -1,0 +1,3 @@
+echo "running run.sh"
+mvn clean 
+mvn package

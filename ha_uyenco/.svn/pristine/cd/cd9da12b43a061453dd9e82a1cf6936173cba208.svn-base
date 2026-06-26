@@ -1,0 +1,14 @@
+package fib_app
+import scala.annotation.tailrec
+
+object FibonacciAppRecursiveAndIterative {
+  @tailrec
+  def fibonacciSeriesRecursiveAndIterative(position : Int, previousList: List[Int] = List(1, 1)): List[Int] = 
+    position match {
+	  case 0 => List(1)
+	  case 1 => previousList
+	  case _ => 
+        val currentList = previousList :+ previousList.takeRight(2).sum
+        fibonacciSeriesRecursiveAndIterative(position - 1, currentList)
+    } 
+}

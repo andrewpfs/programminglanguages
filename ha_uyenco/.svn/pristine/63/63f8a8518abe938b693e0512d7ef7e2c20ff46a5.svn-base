@@ -1,0 +1,18 @@
+package meetingapp
+
+import groovy.transform.*
+
+@Field static Map meetingInfo = [:]
+
+static def schedule (event) {
+  "scheduled ${event}"
+}
+
+static def getMeeting() {
+  "meeting"
+}
+
+static def name(title){
+  meetingInfo['name'] = title
+  "name is ${title}"
+}

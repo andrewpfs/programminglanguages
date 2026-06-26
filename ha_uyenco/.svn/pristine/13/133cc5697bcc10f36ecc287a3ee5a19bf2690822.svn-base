@@ -1,0 +1,9 @@
+module FibonacciAppIterative (fiboAppIterative) where
+
+fiboAppIterative :: Int -> [Int]
+fiboAppIterative 0 = [1]
+fiboAppIterative 1 = [1,1]
+fiboAppIterative position =
+  let nextPair (a,b) = (b, a + b)
+      pairs = iterate nextPair (1,1)
+  in map fst (take (position+1) pairs)

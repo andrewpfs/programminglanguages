@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>perfectapp</groupId>
+  <artifactId>perfect-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <java.version>21</java.version>
+    <!-- Stable Groovy 4.0.26 -->
+    <groovy.version>4.0.26</groovy.version>
+    <!-- Stable Spock for Groovy 4 -->
+    <spock.version>2.3-groovy-4.0</spock.version>
+    <!-- Latest stable GMavenPlus plugin -->
+    <gmavenplus.version>3.0.2</gmavenplus.version>
+    <!-- Latest stable Surefire plugin -->
+    <surefire.version>3.5.2</surefire.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.groovy</groupId>
+      <artifactId>groovy</artifactId>
+      <version>${groovy.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.spockframework</groupId>
+      <artifactId>spock-core</artifactId>
+      <version>${spock.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Enforcer Plugin to validate Java version - MUST BE JAVA 21 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.4.1</version>
+        <executions>
+          <execution>
+            <id>enforce-java</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <version>[21,22)</version>
+                  <message>
+*** ERROR: This project requires Java 21! ***
+
+Current Java version is ${java.version}.
+
+Please do ONE of the following:
+
+1. Set JAVA_HOME for this session:
+   Windows PowerShell:
+     $env:JAVA_HOME = 'C:\Program Files\Java\jdk-21'
+     $env:Path = "$env:JAVA_HOME\bin;$env:Path"
+   
+   Mac/Linux:
+     export JAVA_HOME=/path/to/java-21
+     export PATH=$JAVA_HOME/bin:$PATH
+
+2. Or install Java 21 if you don't have it:
+   https://adoptium.net/temurin/releases/?version=21
+
+Then try running Maven again.</message>
+                </requireJavaVersion>
+              </rules>
+              <fail>true</fail>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Latest Maven Compiler Plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <source>21</source>
+          <target>21</target>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      
+      <!-- GMavenPlus Plugin for Groovy compilation -->
+      <plugin>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <version>${gmavenplus.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>addSources</goal>
+              <goal>addTestSources</goal>
+              <goal>compile</goal>
+              <goal>compileTests</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <!-- Use parallel compilation and specify target bytecode version -->
+          <parallelParsing>true</parallelParsing>
+          <invokeDynamic>true</invokeDynamic>
+          <targetBytecode>21</targetBytecode>
+          <!-- Add JVM arguments for Java 25 compatibility -->
+          <parameters>true</parameters>
+        </configuration>
+      </plugin>
+
+      <!-- Surefire Plugin for running tests -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.version}</version>
+        <configuration>
+          <useModulePath>false</useModulePath>
+          <!-- JVM arguments for Java 25 compatibility -->
+          <argLine>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</argLine>
+          <forkCount>1</forkCount>
+          <reuseForks>false</reuseForks>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

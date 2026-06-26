@@ -1,0 +1,11 @@
+module FibonacciAppIterative (fiboAppIterative) where
+
+
+fiboAppIterative 0 = [1]
+fiboAppIterative position =
+  foldl (\acc elem -> 
+  let lastTwo = take 2 (reverse acc)
+      nextValue = sum lastTwo
+  in acc ++ [nextValue])
+  [1, 1]
+  [1 .. position-1]

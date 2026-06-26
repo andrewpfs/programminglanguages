@@ -1,0 +1,3 @@
+Functional programming languages insist on pure functions, no-side effects, and immutability. What are the reasons for those constraints?
+
+These constraints are important because it allows the code to be easier to read and test. It makes it easier to maintain and reuse functions. It gets rid of previous states so the program is more transparent about what each function does. Functions are independent meaning they are able to run on their own regardless of the other functions; the change of one function won't create errors for another. This means that outcome is always predictable.

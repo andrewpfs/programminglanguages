@@ -1,0 +1,17 @@
+What's a tuple and what's special about them? 
+
+Where would we use them?
+
+Give a few examples of usage of tuples from two languages that we covered in 
+this course (give code in separate files with proper extensions).
+
+Tuples are considered heterogenous data structures, meaning it can hold any type of value.
+Tuples are immutable. This means that it can not be updated, and there can't updates to the tuple once it is made. 
+They are used for combining related pieces of data together without having to predfine the class. 
+
+They would be used for return multiple values without making a class or structure.
+Pattern Matching
+Lightweight immutable data
+
+
+

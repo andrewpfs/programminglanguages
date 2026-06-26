@@ -1,0 +1,8 @@
+What are higher order functions?
+
+Did you use any higher order functions in assignment 1? If so, mention one and explain what you used it for and why was that funciton the right choice for the problem on hand.
+
+They are functions that take functions as arguments or return a function. 
+In assignment #1, we used filter() in java which is a higher order function as it takes a function as its parameter. 
+In our case, the function it took as an argument would return a boolean value after computing if the number was divisible by the factor. 
+This created an efficient program and reduced ceremony in our code as the filter function was able to return the numbers requested in one line.

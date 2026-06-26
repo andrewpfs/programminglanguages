@@ -1,0 +1,17 @@
+package numbergenerator;
+
+enum Result{
+  LOW,
+  HIGH,
+  CORRECT
+}
+
+public class NumberGuesser {
+  static Result evaluateGuess(int guess, int number){
+    if(guess < number)
+    {
+      return Result.LOW;
+    }
+    return Result.CORRECT;
+  }
+}

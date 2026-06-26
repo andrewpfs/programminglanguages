@@ -1,0 +1,12 @@
+module FibonacciAppRecursiveIterative (fiboAppRecursiveIterative) where
+
+fiboAppRecursiveIterative :: Int -> [Int]
+fiboAppRecursiveIterative position = loop position [1, 1]
+  where
+    loop 0 _ = [1]
+    loop 1 list = list
+    loop n list =
+        let currentList = list ++ [sum (take 2 (reverse list))]
+        in loop (n - 1) currentList
+
+--Feedback: let's avoid using reverse

@@ -1,0 +1,27 @@
+module Main (main) where
+
+import Test.Hspec
+import FibonacciAppRecursive (fiboAppRecursive)
+
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = describe "FibonacciAppRecursive." $ do
+    it "returns [1] when input is 0" $
+      fiboAppRecursive 0 `shouldBe` [1]
+
+    it "returns [1,1] when input is 1" $
+      fiboAppRecursive 1 `shouldBe` [1,1]
+
+    it "returns [1,1,2] when input is 2" $
+      fiboAppRecursive 2 `shouldBe` [1,1,2]
+
+    it "returns [1,1,2,3] when input is 3" $
+      fiboAppRecursive 3 `shouldBe` [1,1,2,3]
+
+    it "returns [1,1,2,3,5,8] when input is 5" $
+      fiboAppRecursive 5 `shouldBe` [1,1,2,3,5,8]
+
+    it "returns [1,1,2,3,5,8,13,21,34,55,89] when input is 10" $
+      fiboAppRecursive 10 `shouldBe` [1,1,2,3,5,8,13,21,34,55,89]

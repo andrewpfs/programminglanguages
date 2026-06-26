@@ -1,0 +1,42 @@
+[Reviewed 10/23/25 10:10 AM EEST]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/25 16:19 PM EEST]
+synopsis: let's dive in
+
+details:
+
+1.
+Good
+
+3.
+Let's dive in, Please see suggestions in file(s).
+
+4.
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/25 14:18 PM BST]
+synopsis: let's structure
+
+details:
+
+1.
+
+Please see suggestions in file(s).
+
+2.
+Good
+
+3.
+Please see suggestions in file(s).
+
+4.
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------

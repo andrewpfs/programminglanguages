@@ -1,0 +1,17 @@
+package fib_app
+
+object FibonacciApp {
+  def fibonacciSeries(targetPosition : Int): List[Int] = {
+    if (targetPosition == 0) //Feedback: Always use { and multiple lines with if}
+      List(1)
+    else if (targetPosition == 1) 
+      List(1,1)
+    else {
+      (2 to targetPosition).foldLeft(List(1, 1)) { (workingSeries, _) =>
+        workingSeries :+ (workingSeries.takeRight(2).sum)
+      }
+    }
+  } 
+}
+
+//Feedback: should we be using match instead of if?

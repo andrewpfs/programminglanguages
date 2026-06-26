@@ -1,0 +1,50 @@
+package numbergenerator;
+
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static numbergenerator.NumberGuesser.evaluateGuess;
+import static numbergenerator.NumberGuesser.play;
+
+public class NumberGuesserTest{
+@Test
+  void guessingNumber20(){
+    assertAll( 
+      () -> assertEquals(evaluateGuess(10, 20), Result.LOW),
+      () -> assertEquals(evaluateGuess(30, 20), Result.HIGH),
+      () -> assertEquals(evaluateGuess(20, 20), Result.CORRECT)
+    );
+  }
+  
+@Test
+  void playFunctionGuess20(){ 
+    AtomicReference<Integer> guessAmounts = new AtomicReference<>();
+    AtomicReference<Result> message = new AtomicReference<>();
+	AtomicBoolean displayCalled = new AtomicBoolean(false);
+	
+    Supplier<Integer> read_guess = () -> 20;
+
+    BiConsumer<Integer,Result> display = (attempts, result) ->
+    {
+      guessAmounts.set(attempts);
+      message.set(result);
+      assertAll(
+        () -> assertEquals(1,guessAmounts.get()), 
+        () -> assertEquals(Result.CORRECT, message.get())
+      );
+	  
+      displayCalled.set(true);
+    }; 
+
+    play(20, read_guess, display);
+	
+    assertEquals(true, displayCalled.get());		  
+  }
+}

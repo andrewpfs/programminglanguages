@@ -1,0 +1,42 @@
+package numbergenerator;
+
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+import java.util.Scanner;
+
+import static numbergenerator.NumberGuesser.play;
+import static numbergenerator.NumberGuesser.generateTarget;
+
+public class NumberGuesserPlay {
+  public static void main(String[] args) {
+	Scanner reader = new Scanner(System.in);
+	int myNumber = generateTarget();
+	
+    System.out.println("""
+    Welcome to the Number Guesser Game!
+    You have to try to guess my number!
+    What's your first guess?""");
+	
+    Supplier<Integer> read_guess = () -> reader.nextInt();
+	
+    BiConsumer<Integer,Result> display = (attempts, result) ->
+    {	  	
+      switch(result){
+        case Result.LOW, Result.HIGH:
+		  System.out.printf("""
+		  That's TOO %s...
+		  What's your next guess?
+		  """, result);
+          break;
+        case Result.CORRECT:
+          System.out.printf("""
+		  That's correct, good job!
+		  That took you %d tries.
+		  """, attempts);
+          break;
+      }
+    };
+
+	play(myNumber, read_guess, display);
+  }
+}

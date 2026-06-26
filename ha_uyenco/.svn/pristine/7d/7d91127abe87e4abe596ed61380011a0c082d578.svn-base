@@ -1,0 +1,10 @@
+-module(fib_app_recursive_iterative_test).
+-include_lib("eunit/include/eunit.hrl").
+
+fibonacci_series_test() ->
+  ?assertEqual([1], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(0)),
+  ?assertEqual([1, 1], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(1)),
+  ?assertEqual([1, 1, 2], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(2)),
+  ?assertEqual([1, 1, 2, 3], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(3)),
+  ?assertEqual([1, 1, 2, 3, 5, 8], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(5)),
+  ?assertEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], fib_app_recursive_iterative:fibonacci_series_recursive_and_iterative(10)).

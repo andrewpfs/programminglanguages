@@ -1,0 +1,10 @@
+package fib-app
+
+import org.scalatest.funsuite.AnyFunSuite
+
+class fibonacciSeriesTest extends AnyFunSuite {
+  test("fibonacciSeries(1) should return 1") {
+    assert(fibonacciSeries(1) == 1)
+  }
+}
+

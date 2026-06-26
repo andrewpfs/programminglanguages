@@ -1,0 +1,27 @@
+package meetingapp
+
+import org.junit.Test
+import static org.junit.Assert.*
+import static meetingapp.sample.scheduleMeeting
+
+
+public class MeetingMakerMakerTest {
+    @Test //Feedback: please use 2-space indentations
+    void meetingCreated() { //Feedback: void firstLineOfDSLSchedule
+        def scheduler = new MeetingScheduler() //Feedback: please remove
+
+        //Feedback: we want to see one line of DSL here, not two.
+        
+        //Feedback: def result = schedule...
+        
+        //Feedback: a blank line
+        //Feedback: assertEquals("some string value", result)
+
+        def result = scheduler.schedule('meeting',{
+            name 'early admissions'
+            start '12:30'
+        }) //Feedback: a blank line after this line, please
+        assertEquals('early admissions', result.name[0])
+        assertEquals('12:30', result.start[0])
+    }
+}

@@ -1,0 +1,320 @@
+[Reviewed 09/25/25 04:30 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Let's focus on the questions in assign1.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 19:27 PM MDT]
+synopsis: let's reduce code
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 17:43 PM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in file(s).
+
+Let's move forward to the functional style
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 16:26 PM MDT]
+synopsis: imperative style first
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 15:52 PM MDT]
+synopsis: pile of text
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 08:32 AM MDT]
+synopsis: build failed
+
+details:
+
+ ./run.sh 
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/opt/homebrew/Cellar/maven/3.9.9/libexec/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/opt/homebrew/Cellar/maven/3.9.9/libexec/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< perfectapp:perfect-app >-----------------------
+[INFO] Building perfect-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- gplus:4.2.0:addSources (default) @ perfect-app ---
+[INFO] 
+[INFO] --- gplus:4.2.0:addTestSources (default) @ perfect-app ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ perfect-app ---
+[INFO] skip non existing resourceDirectory ...assign1/groovy/perfectapp/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ perfect-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gplus:4.2.0:compile (default) @ perfect-app ---
+[INFO] Using isolated classloader, without GMavenPlus classpath.
+[INFO] Using Groovy 4.0.26 to perform compile.
+[INFO] invokedynamic enabled.
+[INFO] Parallel parsing enabled.
+[INFO] Compiled 2 files.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ perfect-app ---
+[INFO] skip non existing resourceDirectory ...assign1/groovy/perfectapp/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ perfect-app ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] 
+[INFO] --- gplus:4.2.0:compileTests (default) @ perfect-app ---
+[INFO] Using isolated classloader, without GMavenPlus classpath.
+[INFO] Using Groovy 4.0.26 to perform compileTests.
+[INFO] invokedynamic enabled.
+[INFO] Parallel parsing enabled.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.637 s
+[INFO] Finished at: 2025-09-24T08:35:06-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.gmavenplus:gmavenplus-plugin:4.2.0:compileTests (default) on project perfect-app: Error occurred while calling a method on a Groovy class from classpath.: InvocationTargetException: BUG! exception in phase 'semantic analysis' in source unit '...assign1/groovy/perfectapp/src/test/groovy/PerfectNumberCheckerTest.groovy' Unsupported class file major version 69 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/25 04:54 AM MDT]
+synopsis: build failed
+
+details:
+
+> ./run.sh 
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/opt/homebrew/Cellar/maven/3.9.9/libexec/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/opt/homebrew/Cellar/maven/3.9.9/libexec/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< your.group:your-artifact >----------------------
+[INFO] Building your-artifact 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- gplus:4.2.0:addSources (default) @ your-artifact ---
+[INFO] 
+[INFO] --- gplus:4.2.0:addTestSources (default) @ your-artifact ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ your-artifact ---
+[INFO] skip non existing resourceDirectory .../groovy/perfectapp/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ your-artifact ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- gplus:4.2.0:compile (default) @ your-artifact ---
+[INFO] Using isolated classloader, without GMavenPlus classpath.
+[INFO] Using Groovy 4.0.26 to perform compile.
+[INFO] invokedynamic enabled.
+[INFO] Parallel parsing enabled.
+[INFO] Compiled 2 files.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ your-artifact ---
+[INFO] skip non existing resourceDirectory .../groovy/perfectapp/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ your-artifact ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] 
+[INFO] --- gplus:4.2.0:compileTests (default) @ your-artifact ---
+[INFO] Using isolated classloader, without GMavenPlus classpath.
+[INFO] Using Groovy 4.0.26 to perform compileTests.
+[INFO] invokedynamic enabled.
+[INFO] Parallel parsing enabled.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.631 s
+[INFO] Finished at: 2025-09-24T04:56:30-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.gmavenplus:gmavenplus-plugin:4.2.0:compileTests (default) on project your-artifact: Error occurred while calling a method on a Groovy class from classpath.: InvocationTargetException: BUG! exception in phase 'semantic analysis' in source unit '.../groovy/perfectapp/src/test/groovy/PerfectNumberCheckerTest.groovy' Unsupported class file major version 69 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+------------------------------------------------------------------------------
+[Reviewed 09/22/25 15:17 PM MDT]
+synopsis: let's revisit a few things
+
+details:
+
+Please see suggestions in file(s).
+
+Let's get started with the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/22/25 04:18 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Let's move forward to the functional style implementation.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/25 09:16 AM MDT]
+synopsis: let's clean up
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/25 06:28 AM MDT]
+synopsis: Let's use a build tool
+
+details:
+
+From run.sh let us issue a command to a build tool to run the tests.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/25 05:57 AM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/25 15:06 PM MDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Please see suggestions in file(s).
+
+Let's move forward to the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/25 05:24 AM MDT]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/19/25 14:37 PM MDT]
+synopsis: functional instead of recursion
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/19/25 05:07 AM EDT]
+synopsis: good so far
+
+details:
+
+Good so far.
+
+Please see suggestions in file(s).
+
+Let's move forward to the functional style implementation.
+
+------------------------------------------------------------------------------
+[Reviewed 09/18/25 18:08 PM EDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/18/25 06:19 AM EDT]
+synopsis: let's clean up
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 09/17/25 18:15 PM CDT]
+synopsis: let's clean up
+
+details:
+
+Let's remove the .java files from assign1/java directory.
+
+Let's move the main subdirectory.
+
+Let's name the project directory from my-app to perfect-app or something like that.
+
+Let's place the class(es) in a package. We want source to be under the src/...package... directory and likewise test. 
+
+------------------------------------------------------------------------------
+[Reviewed 09/16/25 06:23 AM EDT]
+synopsis: let's get code in the right place
+
+details:
+
+Let's start with the imperative solution, please do not include the functional style just yet.
+
+Let's use a build tool for Java to compile and run the tests.
+
+Let a run.sh invoke the build tool. This file should be under the assign1/java directory.
+
+Tests should be in a proper directory and source code should be in an appropriate directory.
+
+No need for main method.
+
+Let's not write comments that tell what the code is doing. Instead we will write expressive code making such comments redundant.
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/25 07:37 AM MDT]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Java
+-Ruby
+-Groovy
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

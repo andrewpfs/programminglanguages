@@ -1,0 +1,7 @@
+Scala and JavaScript are quite different in nature, yet they have a few things in common. Identify some really powerful features that they have in common, explain what they provide, and how they're useful.
+
+Scala and JavaScript both treat functions as first-class citizens, making them strong languages for functional programming. This allows for easier code reuse, abstraction, and readability. 
+
+Both languages also support type flexibility. While JavaScript is dynamic, Scala has type inference and optional return types. This allows for less ceremony and easier maintenance for both languages.
+
+They both also support closures, meaning they can capture variables from its surrounding scope. This allows for encapsulation and reuse of functions which adds on to the power of functional programming.

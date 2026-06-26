@@ -1,0 +1,21 @@
+package dslapp
+
+object dsl{
+  object schedule{
+    private var meetingName = ""
+
+    def name(name: String) = {
+      meetingName = name
+    }
+    val meeting = "scheduled meeting"
+
+    def meeting(closure: => Unit): String = {
+      closure
+      var result = "scheduled meeting"
+      if (meetingName.nonEmpty) {
+        result = s"${result} name is $meetingName"
+      }
+      result
+    }
+  }
+}

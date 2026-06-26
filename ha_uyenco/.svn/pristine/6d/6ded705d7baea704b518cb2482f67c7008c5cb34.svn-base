@@ -1,0 +1,53 @@
+[Reviewed 11/19/25 19:35 PM CET]
+synopsis: minimum code to make tests pass
+
+details:
+
+Please see suggestions in file(s).d
+
+------------------------------------------------------------------------------
+[Reviewed 11/19/25 19:15 PM CET]
+synopsis: run failed
+
+details:
+
+...
+[INFO] Compiling 1 source file with javac [debug release 25] to target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] .../assign4/java/numbergenerator/src/main/java/numbergenerator/numberGuesser.java:[9,8] class NumberGuesser is public, should be declared in a file named NumberGuesser.java
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.298 s
+[INFO] Finished at: 2025-11-19T19:17:04+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project numberGenerator: Compilation failure
+[ERROR] /Users/venkats/agility/svnuh/f25_proglangs/ha_uyenco/assign4/java/numbergenerator/src/main/java/numbergenerator/numberGuesser.java:[9,8] class NumberGuesser is public, should be declared in a file named NumberGuesser.java
+
+
+------------------------------------------------------------------------------
+[Reviewed 11/19/25 00:36 AM CET]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in file(s).
+
+------------------------------------------------------------------------------
+[Reviewed 11/15/25 06:34 AM MST]
+synopsis: language choices
+
+details: 
+
+The team has selected these languages (may be changed later if the team desires):
+
+-Elixer
+-Java
+
+Please place code inside a language directory, for example mylang (all lowercase) subdirectory if the language name is Mylang.
+
+------------------------------------------------------------------------------

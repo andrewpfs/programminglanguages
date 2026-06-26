@@ -1,0 +1,9 @@
+package meetingapp
+
+class MeetingScheduler{
+  
+  static def schedule (event) {
+    return "scheduled " + event
+  }
+  
+}

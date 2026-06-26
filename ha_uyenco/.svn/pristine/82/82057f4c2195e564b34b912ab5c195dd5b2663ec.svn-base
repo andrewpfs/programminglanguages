@@ -1,0 +1,9 @@
+Use a statically typed language:
+
+Given a string made of four characters A, K, E, and W, for example 
+AKEWEWKAEEKAWWEAK, write a program that will print the number of times each 
+letter appears in the string. You are required to use recursion but do not use 
+any mutability. Write the program so that if new characters may be present in 
+the string then the program will be able to process those without any change.
+
+Provide a script to easily run the program.

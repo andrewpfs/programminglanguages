@@ -1,0 +1,16 @@
+package meetingapp
+
+import org.junit.Test
+import static org.junit.Assert.*
+import static MeetingScheduler.*
+
+public class MeetingMakerMakerTest {
+  static def propertyMissing(String name) { name }
+
+  @Test
+  void firstLineOfDSLSchedule() { 
+    def result = schedule meeting
+
+    assertEquals("scheduled meeting", result)
+  }
+}

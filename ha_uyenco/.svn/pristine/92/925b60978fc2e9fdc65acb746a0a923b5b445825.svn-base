@@ -1,0 +1,16 @@
+package meetingapp
+
+class MeetingScheduler{
+  def meetingInfo = [:]
+
+  def methodMissing(String name, args)
+  {
+    meetingInfo[name] = args
+  }
+
+  static def schedule (event)
+  {
+    return event
+  }
+  
+}

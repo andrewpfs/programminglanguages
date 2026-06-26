@@ -1,0 +1,20 @@
+package dslapp
+
+import org.scalatest.funsuite.AnyFunSuite
+import dslapp.dsl._
+import dslapp.dsl.schedule._
+import scala.language.postfixOps
+
+class DSLTest extends AnyFunSuite {
+  test("schedule meeting should return scheduled meeting") {
+    val result = schedule meeting 
+
+    assert(result == "scheduled meeting")
+  }
+
+  test("schedule meeting name 'early admissions' should return scheduled meeting name is early admissions") {
+    val result = schedule meeting { name ("early admissions") }
+	
+    assert(result == "scheduled meeting name is early admissions")
+  }
+}

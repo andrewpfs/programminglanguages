@@ -1,0 +1,12 @@
+package fib_app
+
+object FibonacciAppRecursiveAndIterative {
+  def fibonacciSeriesRecursiveAndIterative(position : Int, previousList: List[Int] = List(1, 1)): List[Int] = position match {
+    case 0 => List(1)
+	case 1 => previousList //Feedback: please indent properly
+	case _ => val currentList = previousList :+ previousList.takeRight(2).sum 
+	
+	fibonacciSeriesRecursiveAndIterative(position - 1, currentList)
+  } 
+}
+//Feedback: exactly one blank line at the bottom of each file, please

@@ -1,0 +1,9 @@
+defmodule NumberGame do
+  def evaluate_guess(guess, target) do
+	cond do
+      guess < target -> :low
+      guess > target -> :high
+	    true  -> :correct
+    end
+  end
+end

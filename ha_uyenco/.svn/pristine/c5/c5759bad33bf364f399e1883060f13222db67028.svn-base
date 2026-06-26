@@ -1,0 +1,34 @@
+//Given this JavaScript code:
+
+var employment = { 
+  salary: 100,
+  bonus: function() {
+    this.salary *= 1.2;
+  }  
+}
+
+class Person {}
+
+const jill = new Person();
+const jack = new Person();
+
+Object.setPrototypeOf(jill, employment);
+Object.setPrototypeOf(jack, employment);
+
+console.log(Object.getPrototypeOf(jill) === Object.getPrototypeOf(jack)); // true
+
+console.log(jill.salary); // 100
+console.log(jack.salary); // 100
+
+jill.bonus();
+
+console.log(jill.salary); // 120
+console.log(jack.salary); // 100
+
+//The first console.log shows that both the objects, jill and jack,
+//share the prototype. The values for salary for each are the same as well,
+//initially. But, when the bonus function sets the salary, it changed only for
+//the object jill and not for the object jack. Why is that? Explain concisely in one sentence distilling down the behavior of JavaScript in general.
+/*
+Your response goes here: Even though both objects share the same prototype, JS assigns properties set with this onto the individual object rather than the prototype, so only the instance that invoked the method gets updated.
+*/

@@ -1,0 +1,9 @@
+Suppose a compiler sees the following code
+
+const sum = 4 + 7
+
+and replaces it with
+
+const sum = 11
+
+What's that feature called and what are the benefits of that feature? [And I am not looking for Constant Folding as the answer]

@@ -1,0 +1,33 @@
+package numbergenerator;
+
+import java.lang.Math;
+import java.util.Scanner;
+
+public class App {
+    public static void numberGuesser(int number) {
+      numberGuesser(number , 0);
+    }
+    public static void numberGuesser(int number, int attempts){
+      Scanner reader = new Scanner(System.in);
+      System.out.println("You have guessed " + attempts + " times");
+      System.out.print("What is your guess: ");
+      int guess = reader.nextInt();
+      if(guess < number){
+        System.out.println("Your guess was lower than the number");
+        numberGuesser(number, attempts+1);
+      }
+      else if(guess > number){
+        System.out.println("Your guess was higher than the number");
+        numberGuesser(number,attempts+1);
+      }
+      else{
+        System.out.println("You have guessed correctly! The number was " + number + "!");
+        System.out.println("It took you " + attempts+1 + " guesses");
+      }
+    }
+    public static void main(String[]args){
+      int number = (int)(Math.random() * 100);
+      System.out.println(number +"\n");
+      numberGuesser(number);
+    }
+}
